@@ -1,0 +1,65 @@
+{
+    "env": {
+      "local": {
+        "hubUrl": "http://0.0.0.0:4723/wd/hub"
+      },
+      "bitBar": {
+        "hubUrl": "https://appium.bitbar.com/wd/hub"
+      },
+      "browserStack": {
+        "hubUrl": "https://amiromar1:p973zUpU1CwCeJ6pFCXJ@hub-cloud.browserstack.com/wd/hub",
+        "device": "XXX",
+        "browserstackappium_version": "1.9.1",
+        "os": "XXX",
+        "os_version": "XXX",
+        "browserstackdebug": "true"
+      }
+    },
+    "android": {
+      "platform": "Android",
+      "platformVersion": "XXX",
+      "deviceName": "XXX",
+      "udid": "XXX",
+      "app": [
+        {
+          "name": "testApp",
+          "url": "/Users/amir/Downloads/gits/youappi-sdk-android/app-test/build/outputs/apk/regular/debug/app-test-regular-debug.apk",
+          "appPackage": "com.youappi.sdk.test",
+          "appActivity": "SampleActivity",
+          "bundleId": "com.youappi.sdk.test"
+        },
+        {
+          "name": "demoApp",
+          "url": "http://XXXX",
+          "appPackage": "XXX",
+          "appActivity": "XXX",
+          "bundleId": "XXX"
+        }
+      ],
+      "automationName": "uiautomator2",
+      "chromedriverExecutableDir": "/Users/amir/IdeaProjects/youappi_sdk_automation/youappi_sdk_tests/src/main/resources/chromedrivers"
+    },
+    "ios": {
+      "platform": "iOS",
+      "platformVersion": "XXX",
+      "deviceName": "XXX",
+      "udid": "XXX",
+      "app": [
+        {
+          "name": "testApp",
+          "url": "/Users/amir/Downloads/YouAppiDemo.app",
+          "bundleId": "com.youappi.sdk.demo"
+        },
+        {
+          "name": "demoApp",
+          "url": "http://XXXX",
+          "bundleId": "XXX"
+        }
+      ],
+      "automationName": "XCUITest"
+    },
+    "autoGrantPermissions": "true",
+    "autoAcceptAlerts": "true",
+    "waitForQuiesence": false,
+    "newCommandTimeout": 120
+}
